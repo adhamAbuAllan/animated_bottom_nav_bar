@@ -1,7 +1,8 @@
 name: animated_bottom_nav_bar
-description: "A new Flutter package project."
+description: A customizable animated bottom navigation bar for Flutter.
 version: 0.0.1
-homepage:
+homepage: https://github.com/adhamAbuAllan/animated_bottom_nav_bar
+repository: https://github.com/adhamAbuAllan/animated_bottom_nav_bar
 
 environment:
   sdk: ^3.9.2

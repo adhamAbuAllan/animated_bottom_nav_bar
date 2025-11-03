@@ -1,39 +1,97 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# 🌀 Animated Bottom Nav Bar
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+A **beautiful and customizable animated bottom navigation bar** for Flutter, built using the [flutter_animate](https://pub.dev/packages/flutter_animate) package.  
+It provides smooth scale and elevation effects when switching between tabs.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+---
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## 🎥 Preview
 
-## Features
+  <img src="./preview.gif" alt="App Preview" width="300",height="700"/>
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
 
-## Getting started
+---
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+## 🚀 Installation
 
-## Usage
+Add this to your `pubspec.yaml`:
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+```yaml
+dependencies:
+  animated_bottom_nav_bar: ^0.0.1
+```
+Then run:
 
-```dart
-const like = 'sample';
+```bash
+flutter pub get
 ```
 
-## Additional information
+Import the package:
+```dart
+import 'package:animated_bottom_nav_bar/animated_bottom_nav_bar.dart';
+```
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+---
+
+## 💡 Usage Example
+
+
+   ```dart
+   import 'package:flutter/material.dart';
+import 'package:animated_bottom_nav_bar/animated_bottom_nav_bar.dart';
+
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  int currentIndex = 0;
+
+  final List<Widget> pages = const [
+    Center(child: Text("🏠 Home")),
+    Center(child: Text("❤️ Favorites")),
+    Center(child: Text("👤 Profile")),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: pages[currentIndex],
+      bottomNavigationBar: AnimatedBottomNavBar(
+        icons: const [Icons.home, Icons.favorite, Icons.person],
+        currentIndex: currentIndex,
+        onTap: (index) => setState(() => currentIndex = index),
+        backgroundColor: Colors.white,
+        iconActiveColor: Colors.blue,
+        iconInactiveColor: Colors.grey,
+        containerActiveColor: Colors.blue.withOpacity(0.1),
+        height: 65,
+        margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+      ),
+    );
+  }
+}
+
+   ```
+
+---
+
+## ⚙️ Parameters
+
+| Parameter              | Type                 | Description                                   |
+| ---------------------- | -------------------- | --------------------------------------------- |
+| `icons`                | `List<IconData>`     | List of icons displayed in the bottom bar.    |
+| `currentIndex`         | `int`                | Currently selected tab index.                 |
+| `onTap`                | `ValueChanged<int>`  | Callback when a tab is tapped.                |
+| `backgroundColor`      | `Color?`             | Background color of the navigation bar.       |
+| `iconActiveColor`      | `Color`              | Color of the active icon. *(default: blue)*   |
+| `iconInactiveColor`    | `Color`              | Color of inactive icons. *(default: grey)*    |
+| `containerActiveColor` | `Color`              | Background color for the active item.         |
+| `height`               | `double`             | Height of the navigation bar. *(default: 60)* |
+| `margin`               | `EdgeInsetsGeometry` | Margin around the navigation bar.             |
+
+---
+

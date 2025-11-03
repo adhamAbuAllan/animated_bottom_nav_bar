@@ -36,8 +36,8 @@ class AnimatedBottomNavBar extends StatefulWidget {
     this.iconInactiveColor = Colors.grey,
     this.containerActiveColor = const Color(0xFFE0F7FA),
 
-    this.height = 60,
-    this.margin = const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+    this.height = 48,
+    this.margin = const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
   }) : super(key: key);
 
   @override

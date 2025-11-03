@@ -7,8 +7,9 @@ It provides smooth scale and elevation effects when switching between tabs.
 
 ## 🎥 Preview
 
-  <img src="./preview.gif" alt="App Preview" width="300",height="700"/>
-
+<p align="center">
+  <img src="./preview.gif" alt="App Preview" />
+</p>
 
 ---
 

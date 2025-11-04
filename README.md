@@ -19,7 +19,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  animated_bottom_nav_bar: ^0.0.1
+clickable_animated_bottom_nav_bar: ^0.0.2
 ```
 Then run:
 

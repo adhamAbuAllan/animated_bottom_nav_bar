@@ -14,7 +14,7 @@ class _MyAppState extends State<MyApp> {
   int _selectedIndex = 0;
 
   final List<IconData> icons = [
-    Icons.abc,
+    Icons.home,
     Icons.favorite,
     Icons.person,
   ];

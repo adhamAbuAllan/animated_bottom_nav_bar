@@ -8,7 +8,7 @@ It provides smooth scale and elevation effects when switching between tabs.
 ## 🎥 Preview
 
 <p align="center">
-  <img src="https://github.com/adhamAbuAllan/animated_bottom_nav_bar/blob/main/preview.gif" alt="App Preview" />
+<img src="https://raw.githubusercontent.com/adhamAbuAllan/animated_bottom_nav_bar/main/preview.gif" alt="App Preview" />
 </p>
 
 ---
@@ -19,7 +19,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-clickable_animated_bottom_nav_bar: ^0.0.2
+clickable_animated_bottom_nav_bar: ^0.0.3
 ```
 Then run:
 

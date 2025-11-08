@@ -1,5 +1,5 @@
+import 'package:clickable_animated_bottom_nav_bar/animated_bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:animated_bottom_nav_bar/animated_bottom_nav_bar.dart';
 
 void main() => runApp(const MyApp());
 
@@ -30,10 +30,6 @@ class _MyAppState extends State<MyApp> {
           icons: icons,
           currentIndex: _selectedIndex,
           onTap: (index) => setState(() => _selectedIndex = index),
-          iconActiveColor: Colors.deepPurple,
-          iconInactiveColor: Colors.white,
-          containerActiveColor: Colors.purple.shade50,
-          backgroundColor: const Color.fromARGB(255, 98, 17, 17),
         ),
       ),
     );

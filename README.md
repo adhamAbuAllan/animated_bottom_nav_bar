@@ -29,7 +29,7 @@ flutter pub get
 
 Import the package:
 ```dart
-import 'package:animated_bottom_nav_bar/animated_bottom_nav_bar.dart';
+import 'package:clickable_animated_bottom_nav_bar/animated_bottom_nav_bar.dart';
 ```
 
 ---
@@ -39,7 +39,7 @@ import 'package:animated_bottom_nav_bar/animated_bottom_nav_bar.dart';
 
    ```dart
    import 'package:flutter/material.dart';
-import 'package:animated_bottom_nav_bar/animated_bottom_nav_bar.dart';
+import 'package:clickable_animated_bottom_nav_bar/animated_bottom_nav_bar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
